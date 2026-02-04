@@ -78,7 +78,7 @@ function setProviderType(type, applyBaseUrl) {
   aiView.fields.cmUrlField.classList.toggle('hidden', !showCustom);
   aiView.fields.hmUrlField.classList.toggle('hidden', !showCustom);
   if (applyBaseUrl && !showCustom) {
-    const baseUrl = type === 'ytclip' ? 'https://ai-api.ytclip.org/v1' : 'https://api.openai.com/v1';
+    const baseUrl = type === 'ytclip' ? 'https://ai-api.ytclip.org/v1' : 'https://generativelanguage.googleapis.com/v1beta/openai/';
     aiView.fields.hfUrl.value = baseUrl;
     aiView.fields.cmUrl.value = baseUrl;
     aiView.fields.hmUrl.value = baseUrl;
